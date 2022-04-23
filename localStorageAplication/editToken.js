@@ -32,7 +32,7 @@ function removeFromStorage(event){
 }).then((result) => {
   /* Read more about isConfirmed, isDenied below */
   if (result.isConfirmed) {
-        document.location.href = 'http://127.0.0.1:5501/index.html'
+        document.location.href = '../index.html'
         localStorage.removeItem('Tokens')
         localStorage.removeItem('Balance')
   } else if (result.isDenied) {
